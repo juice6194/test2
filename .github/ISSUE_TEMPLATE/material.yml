@@ -1,0 +1,31 @@
+name: 提交资料
+description: 推荐资料、分享链接或建议补充内容
+title: "[资料] "
+body:
+  - type: input
+    id: title
+    attributes:
+      label: 资料名称
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 资料简介
+      description: 请介绍内容、适用对象及建议分类。
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 作者与来源链接
+      description: 请提供原作者和可访问的原始来源。
+    validations:
+      required: true
+  - type: textarea
+    id: permission
+    attributes:
+      label: 许可或授权说明
+      description: 如不明确，请写明“仅推荐原始链接，转载授权未知”。
+    validations:
+      required: true
